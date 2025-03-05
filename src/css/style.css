@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-image: url('../images/Group\ 5.png');
+    background-size: contain;
+}
+.main{
+    display:flex;
+    height: 100vh;
+    width: 100vw;   
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    background-color: white;
+    width: 340px;
+    padding: 20px;
+    p{
+        height: 20px;
+        font-size: 10px;
+        &.campo-obrigatorio-visivel{
+            font-size: 15px;
+        }
+        &.inativo{
+            visibility: hidden;
+        }
+        &.ativo{
+            visibility: visible;
+        }&.vermelho{
+            color:red;
+        }
+    }
+    textarea{
+        resize: none;
+        padding: 8px;
+        border: 1px solid;
+        border-radius: 10px;
+        width: 300px;
+        height: 100px;
+        &::placeholder{
+            font-weight: 700;
+        }
+        &.vermelho{
+            border-color: red;
+        }&.verde{
+            border-color: green;
+        }
+    }
+    input{
+
+        padding: 8px;
+        border: 1px solid;
+        width: 300px;
+        height: 35px;
+        border-radius: 5px;
+        &::placeholder{
+            font-weight: 700;
+        }
+        &.vermelho{
+            border-color: red;
+        }
+        &.verde{
+            border-color: green;
+        }
+    }
+    button{
+        width:300px;
+        height: 40px;
+        border-radius: 5px;
+        background-color:#3CCC87;
+        color: white;
+        border: none;
+    }
+}
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    gap:11px;
+    h1{
+        font-size: 20px;
+        height: 46px;
+        font-weight: 900;
+        color: white;
+        span{
+            display: block;
+        }
+    }
+    
+    p{
+        font-weight: 400;
+        width: 300px;
+        font-size: 15px;
+        height: 54px;
+        color: white;
+        
+    }
+    
+}
