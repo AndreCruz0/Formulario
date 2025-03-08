@@ -57,6 +57,7 @@ body{
         width: 300px;
         height: 35px;
         border-radius: 5px;
+        
         &::placeholder{
             font-weight: 700;
         }
